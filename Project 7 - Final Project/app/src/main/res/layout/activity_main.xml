@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Linear_Layout_Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    >
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="top|center"
+        tools:context="com.example.tutorialspoint7.myapplication.MapsActivity" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tweet_Search_Edit_Text"
+        android:gravity="center"
+        android:hint="Enter Search Keyword Here" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:textAppearance="@color/colorPrimaryDark"
+        android:id="@+id/Tweet_Get_Location_Button"
+        android:textSize="24dp"
+       android:layout_margin="10dp"
+        android:gravity="center"
+        tools:text="Click Here to Set Location"
+        android:text="Click to Search" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textAppearance="@color/colorPrimaryDark"
+        android:id="@+id/Tweet_Search_Button"
+        android:textSize="24dp"
+        android:gravity="center"
+        tools:text="Click to Search"
+        android:text="Click to Search" />
+
+</LinearLayout>
+
+</LinearLayout>

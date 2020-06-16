@@ -1,0 +1,2 @@
+rootProject.name='Final Project - Twitter API Test 1'
+include ':app'
